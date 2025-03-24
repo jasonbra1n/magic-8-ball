@@ -34,6 +34,11 @@ Welcome to the **Magic 8 Ball**, a digital twist on the classic fortune-telling 
 ## Contributing
 Feel free to fork, tweak, or add your own flair—new answers, animations, or features welcome! Submit a pull request or open an issue with your ideas.
 
+## Branch Notes
+- `main`: Clean version with a placeholder `analytics.js`.
+- `pages-demo`: Live demo with analytics/AdSense in `analytics.js`. Preserve this file during merges.
+
+
 ## License
 This project is open-source under the [MIT License](LICENSE). Use it, share it, and have fun!
 
