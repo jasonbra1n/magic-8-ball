@@ -1,8 +1,15 @@
-// Google Analytics
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX'); // Replace with your tracking ID
+// Tracking ID  use: ' '
+const TRACKING_ID = null;
 
-// AdSense (if inline JS is needed; otherwise, rely on index.html script tags)
-(adsbygoogle = window.adsbygoogle || []).push({});
+// Google Analytics setup (won’t load or track without a valid ID)
+if (TRACKING_ID) {
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${TRACKING_ID}`;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', TRACKING_ID);
+}
