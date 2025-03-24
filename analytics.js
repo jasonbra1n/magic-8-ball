@@ -1,5 +1,5 @@
 // Tracking ID  use: ' '
-const TRACKING_ID = null;
+const TRACKING_ID = 'G-HTQLXY0B6E';
 
 // Google Analytics setup (won’t load or track without a valid ID)
 if (TRACKING_ID) {
