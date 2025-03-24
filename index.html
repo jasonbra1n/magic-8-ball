@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic 8 Ball</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="eightball-container">
+    <div class="ball float" id="magicBall">
+      <div class="inner-circle">
+        <div class="triangle-container">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="
+              M50,15
+              A10,10 0 0 1 60,25
+              L80,65
+              A10,10 0 0 1 75,75
+              L25,75
+              A10,10 0 0 1 20,65
+              L40,25
+              A10,10 0 0 1 50,15
+              Z" fill="#0047AB" />
+          </svg>
+          <div class="triangle-text" id="answer">Ask a question...</div>
+        </div>
+      </div>
+    </div>
+    <button id="askButton">Ask the Magic 8 Ball</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
