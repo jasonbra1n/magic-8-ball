@@ -34,6 +34,10 @@ Welcome to the **Magic 8 Ball**, a digital twist on the classic fortune-telling 
 ## Contributing
 Feel free to fork, tweak, or add your own flair—new answers, animations, or features welcome! Submit a pull request or open an issue with your ideas.
 
+## Branches
+- **`main`**: The clean, shareable version of the Magic 8 Ball project (no analytics or ads).
+- **`pages-demo`**: The live demo version with analytics and ads, deployed via GitHub Pages at [https://jasonbra1n.github.io/magic-8-ball/](https://jasonbra1n.github.io/magic-8-ball/)
+
 ## License
 This project is open-source under the [MIT License](LICENSE). Use it, share it, and have fun!
 
