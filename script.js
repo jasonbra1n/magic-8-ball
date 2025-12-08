@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const answerDisplay = document.getElementById("answer");
   const ball = document.getElementById("magicBall");
   const triangleContainer = document.querySelector(".triangle-container");
+  const themeToggleButton = document.getElementById("themeToggle");
 
   let isAnimating = false;
 
@@ -68,6 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === "Enter" && !isAnimating) {
       askButton.click();
     }
+  });
+
+  themeToggleButton.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-theme');
   });
 
   // Listen for theme changes from the parent LAB Digital Workshop app

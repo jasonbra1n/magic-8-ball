@@ -6,7 +6,7 @@ This document outlines the future direction and planned features for the Magic 8
 
 ## Short-Term (Next Steps)
 
-- **[ ] Theme Integration:** Fully implement the LAB Digital Workshop theme using the variables and styles defined in `styling_guide.md`.
+- **[x] Theme Integration:** Fully implement the LAB Digital Workshop theme using the variables and styles defined in `styling_guide.md`.
 - **[ ] Add More Answers:** Expand the list of standard and easter egg answers to increase variety.
 - **[ ] Accessibility (A11y) Audit:** Review the application for accessibility improvements, such as adding `aria-live` regions to announce the answer for screen reader users.
 

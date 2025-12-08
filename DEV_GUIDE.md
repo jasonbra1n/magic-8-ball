@@ -46,12 +46,8 @@ Add the `message` event listener from `styling_guide.md` to `script.js`. This al
 // Add this to script.js
 window.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'themeChange') {
-        const html = document.documentElement;
-        if (event.data.theme === 'dark-theme') {
-            html.classList.add('dark-theme');
-        } else {
-            html.classList.remove('dark-theme');
-        }
+        const isDark = event.data.theme === 'dark-theme';
+        document.documentElement.classList.toggle('dark-theme', isDark);
     }
 });
 ```
