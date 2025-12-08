@@ -51,7 +51,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%, var(--text-muted-color), #000);
+  background: radial-gradient(circle at 40% 40%, #444, #000);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   margin: 2rem auto;
   cursor: pointer;
@@ -109,7 +109,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--container-background);
+  color: #b0c4de; /* Light Steel Blue for good contrast on dark blue */
   text-align: center;
   padding: 0 10px;
   font-size: 0.9em;
@@ -120,7 +120,7 @@ body {
 
 button {
   background-color: var(--primary-color);
-  color: white;
+  color: #ffffff;
   font-size: 1.2em;
   padding: 15px 30px;
   border: 1px solid transparent;
