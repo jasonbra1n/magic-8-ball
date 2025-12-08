@@ -69,4 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
       askButton.click();
     }
   });
+
+  // Listen for theme changes from the parent LAB Digital Workshop app
+  window.addEventListener('message', (event) => {
+    // It's good practice to check the origin for security in a production environment
+    // if (event.origin !== 'https://your-trusted-domain.com') return;
+
+    if (event.data && event.data.type === 'themeChange') {
+        const html = document.documentElement;
+        if (event.data.theme === 'dark-theme') {
+            html.classList.add('dark-theme');
+        } else {
+            html.classList.remove('dark-theme');
+        }
+    }
+  });
+
+  // On load, ask the parent for the current theme so we can sync up.
+  // The '*' target origin is okay for this non-sensitive request.
+  window.parent.postMessage({ type: 'requestTheme' }, '*');
 });
