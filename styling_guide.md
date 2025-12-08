@@ -121,12 +121,9 @@ window.addEventListener('message', (event) => {
     // For example: if (event.origin !== 'https://lab.jasonbrain.com') return;
 
     if (event.data && event.data.type === 'themeChange') {
-        const html = document.documentElement;
-        if (event.data.theme === 'dark-theme') {
-            html.classList.add('dark-theme');
-        } else {
-            html.classList.remove('dark-theme');
-        }
+        // Use classList.toggle with a boolean to add/remove the class
+        const isDark = event.data.theme === 'dark-theme';
+        document.documentElement.classList.toggle('dark-theme', isDark);
     }
 });
 
@@ -135,3 +132,6 @@ window.parent.postMessage({ type: 'requestTheme' }, '*');
 ```
 
 You will also need to ensure the main `script.js` in the LAB project can handle these messages. See the `DEVELOPMENT_GUIDE.md` for more details on implementation.
+
+
+
